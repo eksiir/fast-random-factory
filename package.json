@@ -1,0 +1,46 @@
+{
+  "name": "fast-random-factory",
+  "version": "1.0.0",
+  "description": "A wrapper for your choice of random generator to yield their result very fast when called repeatedly.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node debug index.js",
+    "karma": "karma start",
+    "karma-debug": "karma start --log-level debug --single-run",
+    "jasmine": "JASMINE_CONFIG_PATH=test/config/jasmine.json /usr/local/bin/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TODO git@github.com:eksiir/simple-random.git"
+  },
+  "keywords": [
+    "random",
+    "fast"
+  ],
+  "bugs": {
+    "url": "TODO https://github.com/eksiir/simple-random/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "TODO https://github.com/eksiir/simple-random",
+  "author": "bbehzadi@eksiir.tech",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-opera-launcher": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-safari-launcher": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.7"
+  }
+}
