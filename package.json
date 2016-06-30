@@ -1,7 +1,7 @@
 {
   "name": "fast-random-factory",
   "version": "1.0.0",
-  "description": "A wrapper for your choice of random generator to yield cached results fast when called repeatedly.",
+  "description": "Highly customizable Node.js module to generate random objects very fast.",
   "main": "fast-random-factory.js",
   "scripts": {
     "start": "node example.js"
