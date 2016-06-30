@@ -1,6 +1,6 @@
 {
   "name": "fast-random-factory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Highly customizable Node.js module to generate random objects very fast.",
   "main": "fast-random-factory.js",
   "scripts": {
