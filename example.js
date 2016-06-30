@@ -1,10 +1,10 @@
 'use strict';
 
 const _ = require('underscore'),
-    rngFactory = require('./src/fast-random-factory.js');
+    rngFactory = require('./fast-random-factory.js');
 
-const CACHE_SIZE = 5,
-    N_CALLS = 5;
+const CACHE_SIZE = 10,
+    N_CALLS = 50;
 
 var rng = rngFactory.create({
         debug: true,
@@ -18,7 +18,11 @@ var rng = rngFactory.create({
         }
     });
 
-// var rng = rngFactory.create({debug: true, cacheSize: 10});
+//
+// Output numbers will be between 0 and 10000 even if min and max are -ve
+// because generator.args overrule min and max by design.  Comment out all
+// generator object and you'll see -ve random numbers.
+//
 if (rng.err) {
     console.error('Error: ' + rng.err.message);
 } else {
